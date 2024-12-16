@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script>
+    function addprice(amount){
+        this.price=amount;
+    }
+    function book(title,author){
+        this.title=title;
+        this.author=author;
+        this.addprice=addprice;
+    }
+   </script>
+    <title>user defined object</title>
+</head>
+<body>
+    <script>
+        var mybook=new book("perl","mohtashin");
+        mybook.addprice(100);
+
+        document.write("book title is : "+mybook.title +"<br>");
+        document.write("book author is :"+mybook.author+"<br>");
+        document.write("book price is:"+ mybook.price +"<br>");
+    </script>
+</body>
+</html>

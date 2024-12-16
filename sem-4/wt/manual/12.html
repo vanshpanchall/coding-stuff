@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+    <title>jQuery Animation Demo</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 20px;
+            text-align: center;
+            color: white;
+            line-height: 100px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">Click Me!</div>
+    <script>
+        $(document).ready(function () {
+            var $box = $('#box');
+            $box.click(function () {
+                $(this).stop().animate({
+                    left: '+=100px',
+                    opacity: '0.5'
+                }, 1000).animate({
+                    left: '-=100px',
+                    opacity: '1'
+                }, 1000);
+            });
+            $(document).on('click', function (e) {
+                if (!$(e.target).closest('#box').length) {
+                    $box.stop().animate({
+                        left: '0',
+                        opacity: '1'
+                    }, 500);
+                }
+            });
+            $('#toggleButton').click(function () {
+                $('#toggleContent').slideToggle();
+            });
+        });
+    </script>
+</body>
+
+</html>

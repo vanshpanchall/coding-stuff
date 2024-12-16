@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background-color: yellowgreen;
+        }
+
+        div {
+            background-color: red;
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+    <script>
+        function demointernalalert() { alert('Hello op1!'); }
+        function demointernalconfirm() { confirm('are you sure!'); }
+        function demointernalprompt() { prompt('eneter first name'); }
+        function demo1() {
+            var a = prompt("enter the 1st number:");
+            var b = prompt("enter the 2nd number:");
+
+
+            if (a > b) {
+                alert(a + "is max");
+            }
+            else {
+                alert(b + "is max");
+            }
+        }
+        function demo2() {
+            var a = prompt("enter the radius:");
+            var area = 3.14 * a * a;
+            alert(area + "the area of circle");
+        }
+        function printcounting() {
+            var i = 0;
+            while (i < 10) {
+                i++;
+                document.write(i + "<br>");
+            }
+        }
+        function printcountloop() {
+            var n;
+            for (i = 1; i < n; i++) {
+                document.write(i + "<br>");
+            }
+        }
+        function bodybggr() {
+            document.body.style.backgroundColor="blue";
+          
+        }
+        function divbggr() {
+            document.getElementById("d1").style.backgroundColor="gray";
+
+        }
+        function bodybg(){
+            document.body.style.backgroundColor=prompt('enter color name');
+        }
+        function divbg(){
+            document.getElementById("d1").style.backgroundColor=prompt("enter color name");
+        }
+        function bodybgcp(){
+            document.getElementById("cp1").value;
+            document.body.style.backgroundColor=document.getElementById("cp1").value;
+        }
+        function divbgcp(){
+            document.getElementById("cp2").value;
+            document.getElementById("d1").style.backgroundColor=document.getElementById("cp2").value;
+        }
+        function textchange(){
+            document.getElementById("d1").innerHTML="hello";
+        }
+        function textchangeinp(){
+            document.getElementById("d1").innerHTML=prompt("enter name print");
+        }
+    </script>
+    <title>demo javasript</title>
+</head>
+
+<body>
+    <div id="d1">hello students</div>
+    <hr>
+    <!--pop up & inline selector-->
+    <input type="button" value="alert" onclick="alert('how are you?')" />
+    <input type="button" value="confirm" onclick="confirm('are you sure... ')" />
+    <input type="button" value="prompt" onclick="prompt('enter you name')"/>
+    <hr>
+
+    <!--pop up & inline selector-->
+       
+    <input type="button" value="alert internal" onclick="demointernalalert()" />
+    <input type="button" value="confirm internal" onclick="demointernalconfirm()" />
+    <input type="button" value="prompt internal" onclick="demointernalprompt()" />
+    <hr>
+    <input type="button" value="alertexternal" onclick="demoexternalalert()" />
+    <input type="button" value="confirmexternal" onclick="demoexternalconfirm()" />
+    <input type="button" value="promptexternal" onclick="demoexternalprompt()" />
+    <hr>
+    <input type="button" value="find area of circle" onclick="demo2()" />
+    <input type="button" value="find max no" onclick="demo1()" />
+    <hr>
+    <input type="button" value="printnumber" onclick="printcounting()" />
+    <hr>
+    <input type="button" value="printnumber1" onclick="printcountloop()" /><hr>
+    <input type="button" value="bodybggr" onclick="bodybggr()" />
+    <input type="button" value="divbggr" onclick="divbggr()" />
+    <hr>
+    <input type="button" value="bodybg" onclick="bodybg()"/>
+    <input type="button" value="div"onclick="divbg()"/>
+    <hr>
+    <input type="color" id="cp1" onchange="bodybgcp()"/>
+    <input type="color" id="cp2" onchange="divbgcp()"/>
+<hr>
+<input type="button" value="textchange" onclick="textchange()"/>
+<input type="button" value="textchange" onclick="textchangeinp()"/>
+<hr>
+
+</body>
+
+</html>

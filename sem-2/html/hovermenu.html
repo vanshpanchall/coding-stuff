@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        font-family: cursive;
+        background-color: aquamarine;
+    }
+
+    .a ol li ul {
+        display: none;
+    }
+
+    .a li:hover ul li ul li {
+        display: block;
+    }
+
+    .a li:hover ol li {
+        display: none;
+    }
+
+    .a li ol li:hover ul li {
+        display: block;
+    }
+
+    .a li ol li:hover ul li ul li {
+        display: block;
+    }
+
+    .a li ol li ul:hover ul li {
+        display: block;
+    }
+</style>
+
+<body>
+    <h1 align="center"><b><u>Hover Menu</u></b></h1>
+    <ol type="i" class="a">
+        <h3>
+            <li>Google
+        </h3>
+        <ul style="list-style-type:disc;">
+            <li>Gmailn
+                <ul style="list-style-type: none;">
+                    <li>- Sign Up</li>
+                    <li>- Sign In
+                        <ul style="list-style-type: none;">
+                            <li>- Sign In as Admin</li>
+                            <li>- Sign In as User</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            </li>
+        </ul>
+        <h3>
+            <li>Facebook</li>
+        </h3>
+
+        <h3>
+            <li>Microsoft</li>
+        </h3>
+        <ul style="list-style-type:disc;">
+            <li>Bing</li>
+            <li>LinkedIn</li>
+        </ul>
+        <h3>
+            <li>Amazon</li>
+        </h3>
+        <ul style="list-style-type:disc;">
+            <li>AWS</li>
+            <li>E-Commerce</li>
+            <li>EC2</li>
+        </ul>
+        <h3>
+            <li>MSN</li>
+        </h3>
+
+    </ol>
+</body>

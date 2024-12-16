@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="2" align="center">
+        <th>ARMSTRONG NUMBERS</th>
+        <script type="text/javascript">
+            var i, num, temp, sum;
+            var n = 0;
+            i = 1;
+            do {
+                num = i;
+                sum = 0;
+                while (num > 0) {
+                    n = num % 10;
+                    n = parseInt(num);
+                    num = num % 10;
+                    num = parseInt(num);
+                    sum = sum + (n * n * n);
+                }
+                if (sum == i) {
+                    document.write("<tr><td>" + i + "</td></tr>");
+                }
+                i++;
+            }
+            while (i <= 1000);
+        </script>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First Js</title>
+</head>
+
+<body></body>
+
+</html>
+
+
+<script>
+
+  // use of console 
+  console.log("Hello World");
+
+  /*
+  At a very high level, there are two types of data types in JS
+  1. Primitive data types: undefined (haven't been defined yet), null (nothing), number (a normal number), string (any sort of text), boolean (true or false), symbol (a symbol is an immutable primitive value that is unique)
+  2. Reference data types: Arrays and Objects (can store a lot of different key value pairs)
+  */
+
+  /* VARIABLE:- A variable allows computers to store and manipulate data in dynamic fashion, it is almost like a box and you can fill with anything literally anything you want */
+
+
+  // storing values with the assignment operator
+  /* There are actually three ways to declare a variable in JS: 
+  1. var - a var is going to be able to be used throughout your whle program.
+  2. let - let will only be used within the scope of where you declared that.
+  3. const - const is a variable that should never change.(if you do so you'll get an error) */
+  var myName = "Vansh"
+  myName = 8
+
+  let ourName = "coding geeks"
+
+  const pi = 3.14
+
+
+  var a;   // uninitialized variable (only declared)
+  var b = 2;  // initializing variables w the assignment operator
+  console.log(b); // it allows you to see things in console
+  a = 7;
+  b = a;
+  console.log(a);
+
+  var c = "I am a";
+  c = c + " String"
+  console.log(c);
+
+  // Variable names and function names in JavaScript are case sensitive. (capatilization matters - use camel case instead)
+
+  // basic math 
+
+  var sum = 10 + 10;      //addition
+  console.log(sum);
+
+  var diff = 45 - 5;      //subtraction
+  console.log(diff);
+
+  var product = 8 * 10;   //multiply
+  var product = 5.3 + 1.3;   //multiply decimal
+  console.log(product);
+
+  var quotient = 50 / 5;  //divide
+  var quotient = 4.4 / 2.0;  // divide decimal
+  console.log(quotient);
+
+  var myVar = 89;           // increment
+  // myVar = myVar + 1;
+  myVar++;
+  console.log(myVar);
+
+  var myVar = 81;           // decrement
+  // myVar = myVar - 1;
+  myVar--;
+  console.log(myVar);
+
+  var ourDecimal = 3.8;     // decimal numbers
+  // var ourDecimal=0.009;
+  console.log(ourDecimal);
+
+  var quotient = 4.4 / 2.0;  //dividing decimals
+  console.log(quotient);
+
+  var remainder;           // finding a remainder
+  remainder = 11 % 2;      // the remainder operator is often used to determine if a number is even or odd
+  console.log(remainder);
+
+  var a = 3;
+  var b = 17;
+  var c = 22;
+
+  // augmented addition & subtraction
+  a += 7;  // a-=1; a*=5  // "*=" for augmented mul
+  b += 3;  // b-=7; b*=3  // "/=" for augmented div
+  c += 8;  // c-=2; c*=10
+  console.log(a, b, c);
+
+  var myFirstName = "Vansh";  // creating strings
+  var myLastName = "Panchal";
+  console.log(myFirstName, myLastName);
+
+  var myStr = "I'm a \"double quoted\" string inside \"double quotes\"";
+  var myStr = 'I am a "double quoted" string inside "double quotes"';  // using single quote
+  var myStr = `I'm a "double quoted" string inside "double quotes"`;  //using backticks 
+  console.log(myStr);     // escaping literal quotes
+
+  var myStr = "FirstLine\n\t\\SecondLine\nThirdLine";
+  console.log(myStr);
+
+  var myStr = "first " + "second";
+  console.log(myStr);  //adding strings
+
+  var myName = "Vansh";
+  var myStr = "My name is " + myName + " and I'm good!";
+  console.log(myStr);
+
+  var someAdjective = "Nutshell";
+  var myStr = "Life in a ";
+  myStr += someAdjective;
+  console.log(myStr);
+
+  var length;
+  var lastName = "Lovelace";
+  var length = lastName.length; // [1] to print 2nd letter [lastName.length-1] to print last letter similarly for 2nd,3rd,4th etc
+  console.log(length);
+
+  function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+    var result = "";
+    result += "The " + myAdjective + " " + myNoun + " " + myVerb + " to the store " + myAdverb;
+    return result;
+  }   //world Blanks
+  console.log(wordBlanks("dog", "big", "ran", "quickly"));
+  console.log(wordBlanks("bike", "slow", "flew", "slowly"));
+
+  document.write("this is document write"); // to write in page (avoid)
+
+  alert("this is an alert");
+  prompt("this is a promopt");
+  // console.clear(); //clears console
+</script>

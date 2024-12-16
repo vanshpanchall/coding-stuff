@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function primenumber() {
+            var flag = false;
+            for (i = from; i <= to; i++) {
+                for (j = 2; j < i; j++) {
+                    if (i % j == 0) {
+                        flag = false;
+                        break;
+                    }
+                    else {
+                        flag = true;
+                    }
+                }
+
+                if (flag) {
+                    document.write("" + i);
+                }
+            }
+        }
+    </script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <h4> prime numbers from 1 to 100 are...</h4>
+    <script>
+        primenumber(1, 100)
+    </script>
+</body>
+
+</html>

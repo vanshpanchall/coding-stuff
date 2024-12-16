@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+  
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 align="center">Demo 2</h2>
+    <div align="center">
+        <fieldset style="height: 200px; width: 300px; background-color: lightslategray;">
+            <h3 style="text-shadow:chocolate 2;"> Create Table </h3>
+            <input type="text" id="rows" style="margin-bottom: 10px;margin-top: 50px;" /><br>
+            <input type="text" id="columns" style="margin-bottom: 10px;" /><br>
+            <input type="button" value="Create Table" id="btn1" style="margin-bottom: 20px;" />
+        </fieldset>
+    </div>
+    <script>
+        var rows = document.getElementById("rows");
+        var columns = document.getElementById("columns");
+        var btn1 = document.getElementById("btn1");
+        btn1.addEventListener("click", () => {
+            document.write("<table border=2>");
+            for (let i = 0; i < rows.value; i++) {
+                document.write("<tr>");
+                for (j = 0; j < columns.value; j++) {
+                    document.write("<center><td>op</td></center>");
+                }
+                document.write("</tr>");
+            }
+            document.write("</table>");
+        });
+        </script>
+</body>
+
+</html>

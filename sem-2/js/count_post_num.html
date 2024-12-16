@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        ar=new Array();
+        ar[0]=10;
+        ar[1]=-9;
+        ar[2]=0;
+        ar[3]=20;
+        ar[4]=30;
+        ar[5]=3;
+        ar[6]=88;
+        ar[7]=0;
+        i=0;
+        for(i in ar){
+            document.write(ar[i]+"<br>");
+            i++;
+        }
+        positive_count=0;
+        negative_count=0;
+        zero_count=0;
+        i=0;
+        for(i in ar){
+        if(ar[i]==0)
+        zero_count++;
+        else if(ar[i]>0)
+        positive_count++;
+        else
+        negative_count++;
+        i++;
+        }
+        document.write("<br>"+"total number of positive elements are");
+        document.write("total number of negative elements are"); 
+        document.write("total number of zero elements are"+zero_count+"<br>");
+    </script>
+</body>
+</html>

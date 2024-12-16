@@ -1,0 +1,5 @@
+.mdn{
+   /* border: 5px dotted gray; */
+   box-shadow: 5px -5px 5px 3px black; /*1.horizontal 2.vertical 3.blur 4.spread */
+    cursor: pointer
+}

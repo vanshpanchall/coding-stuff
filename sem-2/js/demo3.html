@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <title>Document</title>
+</head>
+
+<body id="mybody">
+  
+    <select id="color">
+        <option value=" " disabled selected> selct color</option>
+        <option value="red">REd</option>
+        <option value="green">green</option>
+        <option value="blue">blue</option>
+        <option value="yellow">yellow</option>
+    </select>
+    <script>
+        var color = document.getElementById("color");
+        var mybody = document.getElementById("mybody");
+        color.addEventListener("change",()=>{
+            mybody.style.backgroundColor = color.value;
+        });
+        </script>
+</body>
+
+</html>

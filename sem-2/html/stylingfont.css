@@ -1,0 +1,19 @@
+.heading{
+    color: brown;
+}
+.ptm{
+    width: 30%;
+    height: 30%; 
+}
+.text{
+    font-style: italic;
+}
+.cent {
+    display: flex;
+    justify-content: center;
+   /* align-items: center;*/
+    /*text-align: center;*/
+    margin: 0 auto;
+    text-transform: uppercase;
+    color: rgb(92,53,98);
+}

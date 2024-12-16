@@ -1,0 +1,13 @@
+.border{
+    text-align: center;
+    background-color: lightblue;
+    border-collapse: collapse;
+    border-radius: 10px;
+    width: 100%;
+    height: 25px;
+}
+.h{
+    
+    text-align: center;
+    color: red;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+    <title>jQuery Effects</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <button id="fadeInBtn">Fade In</button>
+    <button id="fadeOutBtn">Fade Out</button>
+    <button id="slideToggleBtn">Slide Toggle</button>
+    <div id="content" style="display: none;">
+        <h2>jQuery Effects Demo</h2>
+        <p>This is a paragraph demonstrating jQuery effects.</p>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#fadeInBtn").click(function () {
+                $("#content").fadeIn();
+            });
+            $("#fadeOutBtn").click(function () {
+                $("#content").fadeOut();
+            });
+            $("#slideToggleBtn").click(function () {
+                $("#content").slideToggle();
+            });
+        });
+    </script>
+</body>
+
+</html>

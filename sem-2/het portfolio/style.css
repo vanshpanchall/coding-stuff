@@ -1,0 +1,363 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  /* height: 100vh; */
+  font-family: "Poppins", sans-serif;
+  padding: 2rem 0rem;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+button {
+  cursor: pointer;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+.details>button:hover,
+.about-details>button:hover,
+button:hover{
+  background-color: hsl(260, 100%, 51%);
+}
+
+.m-90 {
+  width: 90%;
+  margin-inline: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 5rem;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+  position: fixed;
+  top: 5%;
+  left: 5%;
+}
+
+.main-nav {
+  display: flex;
+}
+
+.main-nav > li > a {
+  margin-left: 3rem;
+  transition: all 0.5s ease;
+}
+
+.main-nav > li > a:hover {
+  color: mediumblue;
+}
+
+/* profile */
+
+main {
+  padding: 6.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons {
+  margin-left: 1rem;
+  width: 10%;
+  font-size: 20px;
+}
+.icons > p:nth-child(2) {
+  margin: 1.5rem 0rem;
+}
+.details {
+  width: 50%;
+}
+.pf-pic {
+  width: 40%;
+}
+.details > h1 {
+  font-size: 3rem;
+}
+.details > h2,
+.details > h1,
+.details > h3,
+.details > p {
+  margin-bottom: 1rem;
+}
+.details > button {
+  padding: 15px 20px;
+  color: white;
+  background-color: #033a80;
+  border: none;
+  font-size: 17px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/* section  */
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.about-me {
+  width: 35%;
+}
+.about-details {
+  width: 65%;
+}
+.about-pic {
+  width: 80%;
+  height: 100%;
+}
+.about-me,
+.about-details {
+  margin-left: 1rem;
+}
+.about-details > h3 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+.about-details > p {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.about-details > button {
+  padding: 15px 20px;
+  background-color: #033a80;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/* skills */
+
+.skills {
+  padding: 2rem;
+}
+.skill-head,
+.project-heading,
+.connect-heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.html-pr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.range1 {
+  height: 10px;
+  width: 100%;
+  margin-block: 10px 25px;
+  background-color: #b799f3;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.range1 > div {
+  height: 100%;
+  width: 95%;
+  color: aliceblue;
+  background-color: darkblue;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.css-pr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.range2 {
+  height: 10px;
+  width: 100%;
+  margin-block: 10px 25px;
+  background-color: #b799f3;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.range2 > div {
+  height: 100%;
+  width: 80%;
+  color: aliceblue;
+  background-color: darkblue;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.js-pr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.range3 {
+  height: 10px;
+  width: 100%;
+  margin-block: 10px 25px;
+  background-color: #b799f3;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.range3 > div {
+  height: 100%;
+  width: 70%;
+  color: aliceblue;
+  background-color: darkblue;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.java-pr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.range4 {
+  height: 10px;
+  width: 100%;
+  margin-block: 10px 25px;
+  background-color: #b799f3;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.range4 > div {
+  height: 100%;
+  width: 75%;
+  color: aliceblue;
+  background-color: darkblue;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+/* project  */
+
+.projects {
+  padding: 2rem;
+}
+.project-heading > h3,
+.project-heading > p,
+.connect-heading>p,
+ .connect-heading>h3{
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.project-heading > h3,
+.connect-heading>h3 {
+  font-size: 25px;
+}
+.project-details {
+  display: flex;
+  justify-content: space-between;
+}
+.project-img {
+  width: 33.33%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.project-img > img {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.project-img:nth-child(2) {
+  margin: 0px 15px;
+}
+
+/* connect */
+.connect {
+  padding: 2rem;
+}
+input,
+textarea{
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  background-color: #ece5fb;
+  display: block;
+  width: 100%;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+form{
+  width: 60%;
+  margin-inline: auto;
+  text-align: center;
+}
+form > button{
+  padding: 15px 50px;
+  border: none;
+  background-color:#033a80;
+  border-radius: 10px;
+  color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
